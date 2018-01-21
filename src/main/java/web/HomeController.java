@@ -21,6 +21,7 @@ public class HomeController implements InitializingBean{
 	@RequestMapping(method=RequestMethod.GET)
 	public String home(){
 		dao.addAnnotation();
+		System.out.println("test");
 		return "home";
 	}
 	
