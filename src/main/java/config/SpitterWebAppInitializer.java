@@ -7,13 +7,10 @@ import javax.servlet.ServletRegistration.Dynamic;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-import config.securityConfig.SecurityConfig;
-import config.securityConfig.SecurityWebInitializer;
-
 public class SpitterWebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
-		return new Class<?>[]{RootConfig.class,SecurityConfig.class};
+		return new Class<?>[]{RootConfig.class};
 	}
 
 	@Override
